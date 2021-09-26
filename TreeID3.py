@@ -6,6 +6,6 @@ class TreeID3:
   def __init__(self):
     self.root = None
 
-  def fit(self, samples, target):
-    self.root = TreeNode(samples, target)
+  def fit(self, training_data, target):
+    self.root = TreeNode(training_data, target)
     self.root.make()
